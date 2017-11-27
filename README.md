@@ -4,6 +4,6 @@
 + import Client
 + client = Client()
 + client.Connect('127.0.0.1', 5000)
-+ client.Pub(0, '/test', 'test content')
 + client.Sub(0, '/test')
++ client.Pub(0, '/test', 'test content')
 + result = client.Get()
